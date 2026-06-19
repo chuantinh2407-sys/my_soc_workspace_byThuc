@@ -1,0 +1,9 @@
+{
+    "python.defaultInterpreterPath": "/home/nguyen-van-thuc/ic_workspace/downloads/litex/litex-venv/bin/python3",
+    "terminal.integrated.env.linux": {
+        "PATH": "/home/nguyen-van-thuc/ic_workspace/downloads/litex/litex-venv/bin:${env:PATH}"
+    },
+    "python.analysis.extraPaths": [
+        "/home/nguyen-van-thuc/ic_workspace/downloads/litex/litex-venv/lib/python3.12/site-packages"
+    ]
+}
