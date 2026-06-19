@@ -1,0 +1,13 @@
+# Loại bỏ các file tạm của hệ thống và trình biên dịch
+*.log
+*.jou
+*.tmp
+*.o
+*.out
+*.bak
+
+# Loại bỏ các thư mục chứa dữ liệu cá nhân hoặc project tạm
+/build/
+/temp/
+.DS_Store
+*.env  # Nơi chứa mật khẩu, key
