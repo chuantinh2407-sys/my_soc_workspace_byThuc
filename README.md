@@ -2,6 +2,7 @@ SoC Generator Tool - Automated System-on-Chip Framework
 SoC Generator Tool là một khung làm việc (framework) tự động hóa, được thiết kế để đơn giản hóa quá trình tích hợp các Intellectual Property (IP) Cores vào một kiến trúc System-on-Chip (SoC) thống nhất. Bằng cách kết hợp sức mạnh của Python (để tự động hóa) và Verilog (để tổng hợp phần cứng), dự án này giúp các kỹ sư thiết kế phần cứng loại bỏ các thao tác thủ công, giảm thiểu sai sót trong việc kết nối tín hiệu (port mapping) và tối ưu hóa thời gian phát triển dự án.
 Table of Contents
  
+Table of Contents
 1. Introduction
 
 2. Key Features and Applications
@@ -51,7 +52,7 @@ picosoc,"Module trung tâm, quản lý kết nối giữa CPU và các Slave",Sy
 
 Yêu cầu hệ thống: Cài đặt Python 3.10+, trình biên dịch Verilog (như Icarus hoặc Vivado).
 
-Cloning: git clone [https://github.com/chuantinh2407-sys/project_soc.git](https://github.com/chuantinh2407-sys/project_soc.git)
+Cloning: git clone https://github.com/chuantinh2407-sys/project_soc.git
 
 Cấu hình: Chỉnh sửa các thông số IP trong thư mục python/.
 
