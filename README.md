@@ -1,7 +1,5 @@
 SoC Generator Tool - Automated System-on-Chip Framework
-SoC Generator Tool là một khung làm việc (framework) tự động hóa, được thiết kế để đơn giản hóa quá trình tích hợp các Intellectual Property (IP) Cores vào một kiến trúc System-on-Chip (SoC) thống nhất. Bằng cách kết hợp sức mạnh của Python (để tự động hóa) và Verilog (để tổng hợp phần cứng), dự án này giúp các kỹ sư thiết kế phần cứng loại bỏ các thao tác thủ công, giảm thiểu sai sót trong việc kết nối tín hiệu (port mapping) và tối ưu hóa thời gian phát triển dự án.
-Table of Contents
- 
+SoC Generator Tool is an automated framework designed to streamline the integration of Intellectual Property (IP) cores into a unified System-on-Chip (SoC) architecture. By leveraging the power of Python for automation and Verilog for hardware synthesis, this project helps hardware engineers eliminate manual tasks, reduce port-mapping errors, and optimize development cycles.
 Table of Contents
 1. Introduction
 
@@ -20,66 +18,65 @@ Table of Contents
 8. Contact Information
 
 1. Introduction
-Trong các dự án thiết kế vi mạch (IC Design) hiện đại, việc quản lý hàng chục module IP khác nhau là một thách thức lớn. SoC Generator Tool ra đời với tư duy Lập trình hướng đối tượng (OOP), giúp đóng gói các IP (như UART, SPI, Memory Controller) thành các đối tượng có thể quản lý, kiểm soát và kết nối một cách logic thay vì ghép nối thủ công.
+In modern IC design, managing dozens of different IP cores is a significant challenge. SoC Generator Tool was created with an Object-Oriented Programming (OOP) mindset, enabling engineers to encapsulate IPs (such as UART, SPI, and Memory Controllers) into manageable, controllable, and logically connected objects rather than relying on manual assembly.
 
 2. Key Features and Applications
-Modular Design: Cấu trúc dạng module cho phép "cắm" các ngoại vi mới (peripherals) vào hệ thống mà không phá vỡ kiến trúc cũ.
+Modular Design: The modular structure allows new peripherals to be "plugged in" without disrupting the existing architecture.
 
-Configuration-Driven: Hệ thống sử dụng các script cấu hình thay vì hard-code các thông số vào Verilog, giúp dễ dàng thay đổi địa chỉ bộ nhớ hoặc baudrate.
+Configuration-Driven: The system uses configuration scripts rather than hard-coding parameters into Verilog, facilitating easy changes to memory addresses or baud rates.
 
-Automated Integration: Tự động phát sinh file soc_top.v với kết nối bus chính xác.
+Automated Integration: Automatically generates soc_top.v files with precise bus connectivity.
 
-Prototyping Ready: Phù hợp cho việc thử nghiệm trên các dòng FPGA của Xilinx (Vivado), Intel/Altera (Quartus) hoặc giả lập bằng Icarus Verilog.
+Prototyping Ready: Optimized for testing on Xilinx (Vivado), Intel/Altera (Quartus) FPGA families, or simulation via Icarus Verilog.
 
 3. Repository File Structure
-Dự án được phân tầng để đảm bảo sự tách biệt giữa logic IP và logic điều khiển:
-
+The project is tiered to ensure a strict separation between IP logic and control logic:
+```
 MY_SOC_WORKSPACE/
-├── imported_ips/    # Chứa các IP nguyên bản (đã được kiểm chứng)
-├── soc/             # Chứa firmware (C code), linker script (.lds)
-├── scripts/         # Các công cụ hỗ trợ xây dựng hệ thống
-├── python/          # Logic generator (OOP class definition)
-└── README.md        # Tài liệu hướng dẫn sử dụng
+├── imported_ips/    # Contains original, verified IP cores
+├── soc/             # Contains firmware (C code) and linker scripts (.lds)
+├── scripts/         # Helper tools for system construction
+├── python/          # Generator logic (OOP class definitions)
+└── README.md        # Project documentation
+```
+4. Module Specifications
+The following table outlines the technical specifications of the core IPs integrated into the system:
+Module,Primary Function,Interface
+simpleuart,Serial data transmission for system debugging,UART (8-N-1)
+spiflash,External Flash memory controller,SPI
+spimemio,SPI I/O bridge for real-time instruction fetching,Wishbone / SPI
+picosoc,Central module managing connectivity between CPU and Slaves,System Bus
 
-Module,Chức năng chính,Giao diện
-simpleuart,"Truyền nhận dữ liệu nối tiếp, debug hệ thống",UART (8-N-1)
-spiflash,Điều khiển bộ nhớ Flash ngoài,SPI
-spimemio,Cầu nối I/O truy xuất bộ nhớ Flash theo thời gian thực,Wishbone / SPI
-picosoc,"Module trung tâm, quản lý kết nối giữa CPU và các Slave",System Bus
+5. Getting Started
+To set up the development environment:
 
-5. Getting Started Guide
-Để bắt đầu sử dụng framework này, bạn cần cài đặt môi trường làm việc:
+Requirements: Python 3.10+, Verilog Compiler (Icarus/Vivado).
 
-Yêu cầu hệ thống: Cài đặt Python 3.10+, trình biên dịch Verilog (như Icarus hoặc Vivado).
+Clone Repository:
 
-Cloning: git clone https://github.com/chuantinh2407-sys/project_soc.git
+git clone https://github.com/chuantinh2407-sys/project_soc.git
 
-Cấu hình: Chỉnh sửa các thông số IP trong thư mục python/.
-
-Build: Chạy lệnh python scripts/generate.py để sinh ra file thiết kế phần cứng hoàn chỉnh.
 
 6. Development Workflow
-Quy trình thiết kế của dự án tuân thủ theo 3 bước chuẩn công nghiệp:
+The framework follows standard industry design steps:
 
-Abstraction: Định nghĩa các IP Core thành các class trong Python.
+Abstraction: Define IPs as Python classes.
 
-Generation: Sử dụng script để tự động tạo ra sơ đồ kết nối tín hiệu (interconnect).
+Generation: Automated signal interconnect schematics.
 
-Verification: Kiểm chứng bằng cách chạy các file testbench trong môi trường giả lập để đảm bảo không có xung đột bus.
+Verification: Validate via testbenches to ensure bus integrity.
 
-7. References and Resources
-Dự án tham khảo kiến trúc mở từ các nguồn uy tín:
+7. References
+PicoSoC Project - RISC-V PicoRV32 Foundation.
 
-PicoSoC Project: Nền tảng CPU RISC-V PicoRV32.
+RISC-V ISA - Standard Instruction Set Architecture.
 
-RISC-V ISA Specifications: Tiêu chuẩn tập lệnh RISC-V.
-
-Awesome HDL Resources: Tài liệu hướng dẫn thiết kế hardware hiệu quả.
+Awesome HDL - Best practices in hardware design.
 
 8. Contact Information
-Nếu bạn có thắc mắc kỹ thuật hoặc muốn đóng góp vào dự án:
+For collaboration and technical inquiries:
 
-Tác giả: Nguyễn Văn Thục
+Author: Nguyen Van Thuc
 
 Email: chuantinh2407@gmail.com
 
