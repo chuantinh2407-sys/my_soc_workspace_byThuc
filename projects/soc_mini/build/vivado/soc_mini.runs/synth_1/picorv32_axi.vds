@@ -1,0 +1,561 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Jun 21 02:55:11 2026
+# Process ID: 258242
+# Current directory: /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/vivado/soc_mini.runs/synth_1
+# Command line: vivado -log picorv32_axi.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source picorv32_axi.tcl
+# Log file: /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/vivado/soc_mini.runs/synth_1/picorv32_axi.vds
+# Journal file: /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/vivado/soc_mini.runs/synth_1/vivado.jou
+# Running On: nguyenvanthuc2407, OS: Linux, CPU Frequency: 2143.746 MHz, CPU Physical cores: 16, Host memory: 15981 MB
+#-----------------------------------------------------------
+source picorv32_axi.tcl -notrace
+Command: synth_design -top picorv32_axi -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 258318
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2009.555 ; gain = 403.715 ; free physical = 430 ; free virtual = 3629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'picorv32_axi' [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:2522]
+INFO: [Synth 8-6157] synthesizing module 'picorv32_axi_adapter' [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:2736]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_axi_adapter' (0#1) [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:2736]
+INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:67]
+	Parameter ENABLE_COUNTERS bound to: 1'b1 
+	Parameter ENABLE_COUNTERS64 bound to: 1'b1 
+	Parameter ENABLE_REGS_16_31 bound to: 1'b1 
+	Parameter ENABLE_REGS_DUALPORT bound to: 1'b1 
+	Parameter TWO_STAGE_SHIFT bound to: 1'b1 
+	Parameter BARREL_SHIFTER bound to: 1'b0 
+	Parameter TWO_CYCLE_COMPARE bound to: 1'b0 
+	Parameter TWO_CYCLE_ALU bound to: 1'b0 
+	Parameter COMPRESSED_ISA bound to: 1'b0 
+	Parameter CATCH_MISALIGN bound to: 1'b1 
+	Parameter CATCH_ILLINSN bound to: 1'b1 
+	Parameter ENABLE_PCPI bound to: 1'b0 
+	Parameter ENABLE_MUL bound to: 1'b0 
+	Parameter ENABLE_FAST_MUL bound to: 1'b0 
+	Parameter ENABLE_DIV bound to: 1'b0 
+	Parameter ENABLE_IRQ bound to: 1'b0 
+	Parameter ENABLE_IRQ_QREGS bound to: 1'b1 
+	Parameter ENABLE_IRQ_TIMER bound to: 1'b1 
+	Parameter ENABLE_TRACE bound to: 1'b0 
+	Parameter REGS_INIT_ZERO bound to: 1'b0 
+	Parameter MASKED_IRQ bound to: 0 - type: integer 
+	Parameter LATCHED_IRQ bound to: -1 - type: integer 
+	Parameter PROGADDR_RESET bound to: 0 - type: integer 
+	Parameter PROGADDR_IRQ bound to: 16 - type: integer 
+	Parameter STACKADDR bound to: -1 - type: integer 
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1273]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1319]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1319]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1502]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1502]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1588]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1588]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1588]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1588]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1588]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32' (0#1) [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:67]
+WARNING: [Synth 8-7071] port 'mem_la_read' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:2679]
+WARNING: [Synth 8-7071] port 'mem_la_write' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:2679]
+WARNING: [Synth 8-7071] port 'mem_la_addr' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:2679]
+WARNING: [Synth 8-7071] port 'mem_la_wdata' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:2679]
+WARNING: [Synth 8-7071] port 'mem_la_wstrb' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:2679]
+WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 27 connections declared, but only 22 given [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_axi' (0#1) [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:2522]
+WARNING: [Synth 8-6014] Unused sequential element mem_la_firstword_reg_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:397]
+WARNING: [Synth 8-6014] Unused sequential element last_mem_valid_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:398]
+WARNING: [Synth 8-6014] Unused sequential element next_insn_opcode_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:438]
+WARNING: [Synth 8-6014] Unused sequential element mem_la_secondword_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:576]
+WARNING: [Synth 8-6014] Unused sequential element prefetched_high_word_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:577]
+WARNING: [Synth 8-6014] Unused sequential element q_ascii_instr_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:784]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_imm_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:785]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_opcode_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:786]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs1_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:787]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs2_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:788]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rd_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:789]
+WARNING: [Synth 8-6014] Unused sequential element dbg_next_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:790]
+WARNING: [Synth 8-6014] Unused sequential element dbg_valid_insn_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:793]
+WARNING: [Synth 8-6014] Unused sequential element cached_ascii_instr_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:798]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_imm_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:799]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_opcode_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:801]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs1_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:804]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs2_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:805]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rd_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:806]
+WARNING: [Synth 8-6014] Unused sequential element dbg_insn_addr_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:810]
+WARNING: [Synth 8-6014] Unused sequential element clear_prefetched_high_word_q_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1298]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rinst_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1411]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rdata_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1412]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_wdata_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1413]
+WARNING: [Synth 8-6014] Unused sequential element alu_out_0_q_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1415]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1418]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_2_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1419]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1422]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1423]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_valid_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1424]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_valid_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1425]
+WARNING: [Synth 8-6014] Unused sequential element next_irq_pending_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1445]
+WARNING: [Synth 8-6014] Unused sequential element decoder_trigger_q_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1452]
+WARNING: [Synth 8-6014] Unused sequential element decoder_pseudo_trigger_q_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1454]
+WARNING: [Synth 8-6014] Unused sequential element latched_trace_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1470]
+WARNING: [Synth 8-6014] Unused sequential element irq_active_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1476]
+WARNING: [Synth 8-6014] Unused sequential element irq_delay_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1477]
+WARNING: [Synth 8-6014] Unused sequential element irq_mask_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1478]
+WARNING: [Synth 8-6014] Unused sequential element irq_state_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1480]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1482]
+WARNING: [Synth 8-6014] Unused sequential element current_pc_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1500]
+WARNING: [Synth 8-6014] Unused sequential element irq_pending_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1968]
+WARNING: [Synth 8-6014] Unused sequential element trace_valid_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1457]
+WARNING: [Synth 8-6014] Unused sequential element instr_ecall_ebreak_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1091]
+WARNING: [Synth 8-6014] Unused sequential element pcpi_timeout_reg was removed.  [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/rtl/veri/picorv32.v:1475]
+WARNING: [Synth 8-7129] Port pcpi_wr in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[31] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[30] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[29] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[28] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[27] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[26] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[25] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[24] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[23] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[22] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[21] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[20] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[19] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[18] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[17] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[16] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[15] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[14] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[13] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[12] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[11] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[10] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[9] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[8] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[7] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[6] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[5] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[4] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[3] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[2] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[1] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[0] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_wait in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_ready in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[31] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[30] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[29] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[28] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[27] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[26] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[25] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[24] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[23] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[22] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[21] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[20] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[19] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[18] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[17] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[16] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[15] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[14] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[13] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[12] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[11] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[10] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[9] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[8] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[7] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[6] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[5] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[4] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[3] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[2] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[1] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[0] in module picorv32 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2094.523 ; gain = 488.684 ; free physical = 317 ; free virtual = 3516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2106.398 ; gain = 500.559 ; free physical = 317 ; free virtual = 3516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2106.398 ; gain = 500.559 ; free physical = 317 ; free virtual = 3516
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2106.398 ; gain = 0.000 ; free physical = 317 ; free virtual = 3516
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'tx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_csn'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_csn'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_mosi'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_mosi'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_miso'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_miso'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_clk'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_clk'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/picorv32_axi_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/picorv32_axi_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc]
+WARNING: [Vivado 12-584] No ports matched 'serial_tx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_rx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_rx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -filter {mr_ff == TRUE}'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:30]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:32]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == PRE} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}]'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:32]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE}'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:34]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == C} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE}]'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:34]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff2 == TRUE}'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:34]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == D} -of_objects [get_cells -hierarchical -filter {ars_ff2 == TRUE}]'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:34]
+Finished Parsing XDC File [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/picorv32_axi_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/picorv32_axi_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.148 ; gain = 0.000 ; free physical = 307 ; free virtual = 3506
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.184 ; gain = 0.000 ; free physical = 307 ; free virtual = 3506
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 308 ; free virtual = 3507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 308 ; free virtual = 3507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 308 ; free virtual = 3507
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'mem_state_reg' in module 'picorv32'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                 iSTATE0 |                               01 |                               10
+                  iSTATE |                               10 |                               01
+                 iSTATE1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mem_state_reg' using encoding 'sequential' in module 'picorv32'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 303 ; free virtual = 3505
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 13    
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 80    
++---RAMs : 
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 24    
+	   6 Input   32 Bit        Muxes := 1     
+	   9 Input   32 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 5     
+	   3 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   7 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   9 Input    5 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   9 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 21    
+	   9 Input    1 Bit        Muxes := 25    
+	   7 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design picorv32_axi has port mem_axi_awprot[2] driven by constant 0
+WARNING: [Synth 8-3917] design picorv32_axi has port mem_axi_awprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design picorv32_axi has port mem_axi_awprot[0] driven by constant 0
+WARNING: [Synth 8-3917] design picorv32_axi has port mem_axi_arprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design picorv32_axi has port mem_axi_arprot[0] driven by constant 0
+WARNING: [Synth 8-7129] Port pcpi_wr in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[31] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[30] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[29] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[28] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[27] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[26] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[25] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[24] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[23] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[22] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[21] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[20] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[19] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[18] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[17] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[16] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[15] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[14] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[13] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[12] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[11] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[10] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[9] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[8] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[7] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[6] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[5] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[4] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[3] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[2] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[1] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[0] in module picorv32 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 261 ; free virtual = 3468
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------+-------------+-----------+----------------------+--------------+
+|Module Name   | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++--------------+-------------+-----------+----------------------+--------------+
+|picorv32_core | cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++--------------+-------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 304 ; free virtual = 3511
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 278 ; free virtual = 3493
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------+-------------+-----------+----------------------+--------------+
+|Module Name   | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++--------------+-------------+-----------+----------------------+--------------+
+|picorv32_core | cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++--------------+-------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 279 ; free virtual = 3491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 277 ; free virtual = 3484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 277 ; free virtual = 3484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 277 ; free virtual = 3484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 277 ; free virtual = 3484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 277 ; free virtual = 3484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 277 ; free virtual = 3484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    83|
+|3     |LUT1     |     4|
+|4     |LUT2     |   101|
+|5     |LUT3     |    74|
+|6     |LUT4     |   267|
+|7     |LUT5     |   168|
+|8     |LUT6     |   367|
+|9     |RAM32M   |    10|
+|10    |RAM32X1D |     4|
+|11    |FDRE     |   558|
+|12    |FDSE     |    21|
+|13    |IBUF     |    39|
+|14    |OBUF     |   210|
+|15    |OBUFT    |    68|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 277 ; free virtual = 3484
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 73 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2262.184 ; gain = 500.559 ; free physical = 277 ; free virtual = 3484
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2262.184 ; gain = 656.344 ; free physical = 277 ; free virtual = 3484
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.184 ; gain = 0.000 ; free physical = 542 ; free virtual = 3750
+INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'picorv32_axi' is not ideal for floorplanning, since the cellview 'picorv32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.184 ; gain = 0.000 ; free physical = 540 ; free virtual = 3747
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: 8db4e728
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 189 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 2262.184 ; gain = 933.508 ; free physical = 538 ; free virtual = 3746
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1723.976; main = 1427.194; forked = 354.663
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3221.652; main = 2262.152; forked = 991.516
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2286.160 ; gain = 0.000 ; free physical = 538 ; free virtual = 3746
+INFO: [Common 17-1381] The checkpoint '/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/vivado/soc_mini.runs/synth_1/picorv32_axi.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file picorv32_axi_utilization_synth.rpt -pb picorv32_axi_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 21 02:55:39 2026...

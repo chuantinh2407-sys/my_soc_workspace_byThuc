@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc rfile:../soc_mini.xdc id:1 order:EARLY} [current_design]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC D10 [get_ports {serial_tx}]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC A9 [get_ports {serial_rx}]
+set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC E3 [get_ports {clk}]

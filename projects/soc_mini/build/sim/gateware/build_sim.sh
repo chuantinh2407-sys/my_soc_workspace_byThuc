@@ -1,0 +1,2 @@
+rm -rf obj_dir/
+make -C . -f /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/build/sim/core/Makefile CC_SRCS="--cc /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/pythondata_cpu_picorv32/verilog/picorv32.v --cc /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/sim/gateware/sim.v " OPT_LEVEL=O3

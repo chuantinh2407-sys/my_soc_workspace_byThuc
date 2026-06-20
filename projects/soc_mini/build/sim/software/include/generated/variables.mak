@@ -1,0 +1,30 @@
+PACKAGES=libc libcompiler_rt libbase libfatfs liblitespi liblitedram libliteeth liblitesdcard liblitesata bios
+PACKAGE_DIRS=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/libc /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/libcompiler_rt /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/libbase /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/libfatfs /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/liblitespi /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/liblitedram /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/libliteeth /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/liblitesdcard /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/liblitesata /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/bios
+LIBS=libc libcompiler_rt libbase libfatfs liblitespi liblitedram libliteeth liblitesdcard liblitesata
+ALWAYS_LINK_LIBS=
+TRIPLE=riscv64-unknown-elf
+CPU=picorv32
+CPUFAMILY=riscv
+CPUFLAGS=-mno-save-restore -march=rv32i2p0_m     -mabi=ilp32 -D__picorv32__ 
+CPUENDIANNESS=little
+CLANG=0
+CPU_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/cores/cpu/picorv32
+SOC_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc
+PICOLIBC_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/pythondata_software_picolibc/data
+PICOLIBC_FORMAT=integer
+LIBC_MODE=minimal
+COMPILER_RT_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/pythondata_software_compiler_rt/data
+export BUILDINC_DIRECTORY
+BUILDINC_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/sim/software/include
+LIBC_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/libc
+LIBCOMPILER_RT_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/libcompiler_rt
+LIBBASE_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/libbase
+LIBFATFS_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/libfatfs
+LIBLITESPI_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/liblitespi
+LIBLITEDRAM_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/liblitedram
+LIBLITEETH_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/libliteeth
+LIBLITESDCARD_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/liblitesdcard
+LIBLITESATA_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/liblitesata
+BIOS_DIRECTORY=/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/venv/lib/python3.12/site-packages/litex/soc/software/bios
+LTO=0
+BIOS_CONSOLE_FULL=1

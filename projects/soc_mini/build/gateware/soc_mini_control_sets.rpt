@@ -1,0 +1,132 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sun Jun 21 02:54:34 2026
+| Host         : nguyenvanthuc2407 running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_control_sets -verbose -file soc_mini_control_sets.rpt
+| Design       : soc_mini
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    54 |
+|    Minimum number of control sets                        |    54 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   103 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    54 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     9 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    35 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             208 |          112 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             243 |           83 |
+| Yes          | No                    | No                     |             614 |          210 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             512 |          179 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                     Enable Signal                     |               Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | serial_tx_i_2_n_0                                     | builder_rs232phytx_next_state                |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                                       | picorv32/pcpi_div/instr_rem_i_1_n_0          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | __main___uart_core_rx_tick                            | p_6_in                                       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | __main___uart_core_tx_tick                            | serial_tx0_out                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG |                                                       | picorv32/pcpi_mul/instr_mulhu_i_1_n_0        |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | picorv32/mem_addr[31]_i_1_n_0                         | picorv32/mem_wstrb[3]_i_1_n_0                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | picorv32/pcpi_timeout_counter[3]_i_2_n_0              | picorv32/pcpi_div/SS[0]                      |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | picorv32/instr_lui0                                   | picorv32/decoded_rs1__0[4]                   |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | __main___uart_core_rx_fifo_level0[4]_i_1_n_0          |                                              |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | picorv32/E[0]                                         |                                              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | picorv32/latched_rd[5]_i_1_n_0                        |                                              |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG | picorv32/pcpi_div/E[0]                                |                                              |                4 |              7 |         1.75 |
+|  clk_IBUF_BUFG | __main___uart_core_tx_data1_in0                       |                                              |                1 |              7 |         7.00 |
+|  clk_IBUF_BUFG | __main___uart_core_rx_data_rs232phyrx_next_value_ce1  |                                              |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | picorv32/is_lui_auipc_jal_jalr_addi_add_sub0          | picorv32/decoded_imm[19]_i_1_n_0             |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG |                                                       | picorv32/mem_addr_reg[12]_0[0]               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | picorv32/is_lui_auipc_jal_jalr_addi_add_sub0          | picorv32/decoded_imm[31]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG | __main___uart_core_rx_fifo_rdport_re                  |                                              |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG | picorv32/__main___uart_core_tx_fifo_rdport_re         |                                              |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG | __main___uart_core_rx_fifo_wrport_we                  |                                              |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG | picorv32/__main___uart_core_tx_fifo_wrport_we         |                                              |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG | picorv32/mem_rdata_q[24]_i_2_n_0                      | picorv32/mem_rdata_q[24]_i_1_n_0             |               12 |             18 |         1.50 |
+|  clk_IBUF_BUFG |                                                       | picorv32/__main___interface0_ram_bus_ack_reg |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | picorv32/is_lui_auipc_jal_jalr_addi_add_sub0          | picorv32/mem_state2                          |                7 |             23 |         3.29 |
+|  clk_IBUF_BUFG | picorv32/mem_addr[31]_i_1_n_0                         |                                              |               23 |             30 |         1.30 |
+|  clk_IBUF_BUFG |                                                       | p_6_in                                       |                8 |             31 |         3.88 |
+|  clk_IBUF_BUFG | picorv32/pcpi_div/divisor                             | picorv32/pcpi_div/divisor[30]_i_1_n_0        |               13 |             31 |         2.38 |
+|  clk_IBUF_BUFG |                                                       | serial_tx0_out                               |                8 |             31 |         3.88 |
+|  clk_IBUF_BUFG | picorv32/builder_csrbank1_autostor_134171473145120_re | picorv32/builder_state_reg_1                 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG |                                                       | picorv32/SR[0]                               |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | picorv32/reg_op2[31]_i_1_n_0                          |                                              |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | picorv32/reg_op1[31]_i_1_n_0                          |                                              |               29 |             32 |         1.10 |
+|  clk_IBUF_BUFG | picorv32/pcpi_mul/pcpi_wr0                            |                                              |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | picorv32/builder_csrbank1_autostor_134171473146464_re | picorv32/mem_addr_reg[3]_1                   |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | picorv32/irq_mask                                     | picorv32/mem_state2                          |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | __main___timer_update_value_wr_stb                    |                                              |                6 |             32 |         5.33 |
+|  clk_IBUF_BUFG | picorv32/timer                                        | picorv32/mem_state2                          |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | picorv32/pcpi_div/quotient_msk                        | picorv32/pcpi_div/quotient_msk[31]_i_1_n_0   |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG |                                                       | picorv32/mem_addr_reg[12]_1                  |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | __main___bus_errors                                   |                                              |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | picorv32/mem_wdata[31]_i_1_n_0                        |                                              |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | picorv32/builder_csrbank0_autostor_134171473846176_re | picorv32/builder_state_reg                   |                6 |             32 |         5.33 |
+|  clk_IBUF_BUFG | picorv32/pcpi_div/divisor                             |                                              |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | picorv32/pcpi_div/quotient                            | picorv32/pcpi_div/quotient_msk[31]_i_1_n_0   |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | picorv32/pcpi_div/dividend                            |                                              |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | picorv32/instr_lui0                                   |                                              |               15 |             40 |         2.67 |
+|  clk_IBUF_BUFG | picorv32/pcpi_mul/__main___reset_wr_stb_reg           | picorv32/pcpi_mul/mul_counter[6]             |               19 |             47 |         2.47 |
+|  clk_IBUF_BUFG | picorv32/is_lui_auipc_jal_jalr_addi_add_sub0          |                                              |               18 |             52 |         2.89 |
+|  clk_IBUF_BUFG | picorv32/cpu_state_reg_n_0_[6]                        | picorv32/mem_state2                          |               19 |             62 |         3.26 |
+|  clk_IBUF_BUFG | picorv32/irq_delay                                    | picorv32/mem_state2                          |               17 |             65 |         3.82 |
+|  clk_IBUF_BUFG |                                                       | picorv32/mem_state2                          |               28 |             81 |         2.89 |
+|  clk_IBUF_BUFG | picorv32/cpuregs_reg_r1_0_63_0_2_i_4_n_0              |                                              |               22 |             88 |         4.00 |
+|  clk_IBUF_BUFG | picorv32/pcpi_mul/__main___reset_wr_stb_reg           |                                              |               39 |            166 |         4.26 |
+|  clk_IBUF_BUFG |                                                       |                                              |              112 |            208 |         1.86 |
++----------------+-------------------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+
+

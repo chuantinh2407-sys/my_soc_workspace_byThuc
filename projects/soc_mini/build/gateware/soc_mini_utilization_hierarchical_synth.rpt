@@ -1,0 +1,33 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sun Jun 21 02:54:28 2026
+| Host         : nguyenvanthuc2407 running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_utilization -hierarchical -file soc_mini_utilization_hierarchical_synth.rpt
+| Design       : soc_mini
+| Device       : xc7a35tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------+-------------------+------------+------------+---------+------+------+--------+--------+------------+
+|    Instance    |       Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------------+-------------------+------------+------------+---------+------+------+--------+--------+------------+
+| soc_mini       |             (top) |       2240 |       2136 |     104 |    0 | 1577 |      4 |      0 |          0 |
+|   (soc_mini)   |             (top) |        187 |        171 |      16 |    0 |  442 |      4 |      0 |          0 |
+|   picorv32     |          picorv32 |       2053 |       1965 |      88 |    0 | 1135 |      0 |      0 |          0 |
+|     (picorv32) |          picorv32 |       1394 |       1306 |      88 |    0 |  680 |      0 |      0 |          0 |
+|     pcpi_div   | picorv32_pcpi_div |        361 |        361 |       0 |    0 |  200 |      0 |      0 |          0 |
+|     pcpi_mul   | picorv32_pcpi_mul |        298 |        298 |       0 |    0 |  255 |      0 |      0 |          0 |
++----------------+-------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

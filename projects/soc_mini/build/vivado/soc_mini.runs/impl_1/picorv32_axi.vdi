@@ -1,0 +1,416 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Jun 21 02:55:51 2026
+# Process ID: 258853
+# Current directory: /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/vivado/soc_mini.runs/impl_1
+# Command line: vivado -log picorv32_axi.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source picorv32_axi.tcl -notrace
+# Log file: /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/vivado/soc_mini.runs/impl_1/picorv32_axi.vdi
+# Journal file: /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/vivado/soc_mini.runs/impl_1/vivado.jou
+# Running On: nguyenvanthuc2407, OS: Linux, CPU Frequency: 3968.077 MHz, CPU Physical cores: 16, Host memory: 15981 MB
+#-----------------------------------------------------------
+source picorv32_axi.tcl -notrace
+Command: link_design -top picorv32_axi -part xc7a35tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1608.746 ; gain = 0.000 ; free physical = 1129 ; free virtual = 4331
+INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'picorv32_axi' is not ideal for floorplanning, since the cellview 'picorv32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'tx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_csn'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_csn'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_mosi'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_mosi'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_miso'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_miso'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_clk'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_clk'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/constraints/top.xdc]
+Parsing XDC File [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc]
+WARNING: [Vivado 12-584] No ports matched 'serial_tx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_rx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_rx'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -filter {mr_ff == TRUE}'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:30]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:32]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == PRE} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}]'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:32]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE}'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:34]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == C} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE}]'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:34]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff2 == TRUE}'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:34]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == D} -of_objects [get_cells -hierarchical -filter {ars_ff2 == TRUE}]'. [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc:34]
+Finished Parsing XDC File [/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/gateware/soc_mini.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1833.273 ; gain = 0.000 ; free physical = 1030 ; free virtual = 4234
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+7 Infos, 24 Warnings, 16 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.42 . Memory (MB): peak = 1921.086 ; gain = 87.777 ; free physical = 1008 ; free virtual = 4212
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: aa852f4c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2416.945 ; gain = 495.859 ; free physical = 581 ; free virtual = 3785
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: aa852f4c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2725.750 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: aa852f4c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2725.750 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+Phase 1 Initialization | Checksum: aa852f4c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2725.750 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: aa852f4c
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2725.750 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: aa852f4c
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2725.750 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+Phase 2 Timer Update And Timing Data Collection | Checksum: aa852f4c
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2725.750 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+
+Phase 3 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: aa852f4c
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2725.750 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+Retarget | Checksum: aa852f4c
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1181fd60b
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2725.750 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+Constant propagation | Checksum: 1181fd60b
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 11508e2f6
+
+Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2725.750 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+Sweep | Checksum: 11508e2f6
+INFO: [Opt 31-389] Phase Sweep created 67 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 11508e2f6
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2757.766 ; gain = 32.016 ; free physical = 275 ; free virtual = 3478
+BUFG optimization | Checksum: 11508e2f6
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 11508e2f6
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2757.766 ; gain = 32.016 ; free physical = 275 ; free virtual = 3478
+Shift Register Optimization | Checksum: 11508e2f6
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 10360d998
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2757.766 ; gain = 32.016 ; free physical = 275 ; free virtual = 3478
+Post Processing Netlist | Checksum: 10360d998
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1166fda49
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2757.766 ; gain = 32.016 ; free physical = 275 ; free virtual = 3478
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2757.766 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1166fda49
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2757.766 ; gain = 32.016 ; free physical = 275 ; free virtual = 3478
+Phase 9 Finalization | Checksum: 1166fda49
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2757.766 ; gain = 32.016 ; free physical = 275 ; free virtual = 3478
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |              67  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1166fda49
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2757.766 ; gain = 32.016 ; free physical = 275 ; free virtual = 3478
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2757.766 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1166fda49
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2757.766 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1166fda49
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2757.766 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2757.766 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+Ending Netlist Obfuscation Task | Checksum: 1166fda49
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2757.766 ; gain = 0.000 ; free physical = 275 ; free virtual = 3478
+INFO: [Common 17-83] Releasing license: Implementation
+25 Infos, 24 Warnings, 16 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2757.766 ; gain = 924.457 ; free physical = 275 ; free virtual = 3478
+INFO: [runtcl-4] Executing : report_drc -file picorv32_axi_drc_opted.rpt -pb picorv32_axi_drc_opted.pb -rpx picorv32_axi_drc_opted.rpx
+Command: report_drc -file picorv32_axi_drc_opted.rpt -pb picorv32_axi_drc_opted.pb -rpx picorv32_axi_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nguyen-van-thuc/ic_workspace/vanthuc/downloads/tools/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/vivado/soc_mini.runs/impl_1/picorv32_axi_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 287 ; free virtual = 3490
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 287 ; free virtual = 3490
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 287 ; free virtual = 3490
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 286 ; free virtual = 3489
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 286 ; free virtual = 3489
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 286 ; free virtual = 3489
+Write Physdb Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 286 ; free virtual = 3489
+INFO: [Common 17-1381] The checkpoint '/home/nguyen-van-thuc/ic_workspace/my_soc_workspace/projects/soc_mini/build/vivado/soc_mini.runs/impl_1/picorv32_axi_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 276 ; free virtual = 3482
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b9521c5e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 276 ; free virtual = 3482
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 276 ; free virtual = 3482
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 315 I/O ports
+ while the target  device: 7a35t package: csg324, contains only 208 available user I/O. The target device has 210 usable I/O pins of which 2 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-68] Instance clk_IBUF_BUFG_inst (BUFG) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[18]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[19]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[20]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[21]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[22]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[23]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[24]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[25]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[26]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[27]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[28]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[29]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[30]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[31]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[3]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[4]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[5]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[6]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[7]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[8]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eoi_OBUF[9]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[18]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[19]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[20]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[21]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[22]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[23]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[24]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[25]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[26]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[27]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[28]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[29]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[30]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[31]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[3]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[4]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[5]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[6]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[7]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[8]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_araddr_OBUF[9]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_arprot_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_arprot_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_arprot_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_arready_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_arvalid_OBUF_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[18]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[19]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[20]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[21]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[22]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[23]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[24]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[25]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[26]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[27]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[28]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[29]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[30]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[31]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[3]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[4]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[5]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[6]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance mem_axi_awaddr_OBUF[7]_inst (OBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e66575bc
+
+Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 260 ; free virtual = 3466
+Phase 1 Placer Initialization | Checksum: e66575bc
+
+Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 260 ; free virtual = 3467
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: e66575bc
+
+Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2797.785 ; gain = 0.000 ; free physical = 260 ; free virtual = 3467
+44 Infos, 24 Warnings, 16 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 21 02:56:06 2026...

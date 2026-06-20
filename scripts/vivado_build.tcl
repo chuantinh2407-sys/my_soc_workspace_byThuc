@@ -25,6 +25,16 @@ puts "INFO: Project directory: $proj_dir"
 file mkdir $build_dir
 create_project -force $project_name $build_dir -part $target_part
 
+# --- TỰ ĐỘNG COPY FIRMWARE VÀO THƯ MỤC BUILD ---
+set firmware_path [file normalize "$workspace_root/software/firmware/firmware.hex"]
+if {[file exists $firmware_path]} {
+    file copy -force $firmware_path $build_dir
+    puts "INFO: Firmware copied successfully to $build_dir"
+} else {
+    puts "WARNING: Firmware file not found at $firmware_path! System may not boot."
+}
+# ----------------------------------------------
+
 # 2. Add Source Files
 set compile_file [file normalize "$proj_dir/compile.f"]
 
@@ -47,7 +57,8 @@ if {[file exists $compile_file]} {
         }
     }
     close $fp
-    
+
+
     if {[llength $file_list] > 0} {
         add_files $file_list
         update_compile_order -fileset sources_1

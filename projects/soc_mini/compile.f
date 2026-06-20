@@ -1,0 +1,9 @@
+rtl/peripherals/spimemio.v
+rtl/peripherals/spiflash.v
+rtl/veri/spimemio.v
+rtl/veri/spiflash.v
+rtl/veri/simpleuart.v
+rtl/veri/picorv32.v
+rtl/veri/picosoc_mem.v
+build/gateware/soc_mini.v
+build/gateware/soc_mini.xdc
