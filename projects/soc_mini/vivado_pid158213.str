@@ -662,3 +662,4 @@ selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aa
 // TclEventType: FILE_SET_CHANGE
 // Elapsed Time for: 'L.f': 53m:02s
 // Elapsed Time for: 'L.f': 53m:04s
+// HMemoryUtils.trashcanNow. Engine heap size: 4,122 MB. GUI used memory: 140 MB. Current time: 6/21/26, 3:05:15 AM ICT
